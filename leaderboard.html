@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[ELICIT] Decode.</title>
+    <link rel="stylesheet" href="/static/assets/css/output.css">
+    <!-- icon inside head -->
+    <link rel="icon" href="/static/assets/images/elicit_logo.png" type="image/x-icon">
+</head>
+
+<body class="bg-background">
+    <!-- MUJ ACM SIGAI -->
+
+    <nav class="flex bg-text w-full h-[50px] justify-start place-items-center px-4">
+        <!-- logo -->
+        <div class="font-poppins text-4xl font-bold"><a href="/">Decode.</a></div>
+        <!-- main nav -->
+    </nav>
+    <section class="flex relative justify-center mb-[50px] w-full min-h-[95vh] hero">
+        <div class="w-[95%] md:w-[70%] lg:w-[80%] relative my-[100px]">
+            <div class="text-center rounded-[30px] min-h-[70vh] bg-text p-4 md:p-8">
+
+                <h1 class="text-left text-background font-nulshock text-2xl md:text-4xl">
+                    leaderboard
+                </h1>
+
+
+                <div class="flex w-full justify-center mb-[20px] mt-2">
+                    <div class="w-full md:w-[100%] overflow-x-scroll">
+                        <table class="w-full border-2 border-background">
+                            <tr>
+                                <th
+                                    class="border-2 text-easy-bg bg-background text-left px-2 font-nulshock border-hard-bg">
+                                    POSITION</th>
+                                <th
+                                    class="border-2 text-easy-bg bg-background text-left px-2 font-nulshock border-hard-bg">
+                                    USERNAME</th>
+                                <th
+                                    class="border-2 text-easy-bg bg-background text-left px-2 font-nulshock border-hard-bg">
+                                    POINTS</th>
+                            </tr>
+
+                            <tr>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    1</td>
+                                <td
+                                    class="border-2 flex place-items-center text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    <svg width="15" height="15" viewBox="77.4 77.4 360 360"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill="#FFD43B"
+                                            d="M 81.4 257.4 C 81.4 121.915 228.067 37.237 345.4 104.98 C 399.855 136.419 433.4 194.521 433.4 257.4 C 433.4 392.885 286.733 477.563 169.4 409.82 C 114.945 378.381 81.4 320.279 81.4 257.4 Z M 265.8 162.5 C 262.4 155.5 252.5 155.5 249 162.5 L 226.6 207.9 C 225.2 210.7 222.6 212.6 219.6 213 L 169.4 220.3 C 161.7 221.4 158.7 230.8 164.2 236.3 L 200.5 271.7 C 202.7 273.9 203.7 276.9 203.2 280 L 194.6 329.9 C 193.3 337.5 201.3 343.4 208.2 339.8 L 253 316.2 C 255.7 314.8 259 314.8 261.7 316.2 L 306.5 339.8 C 313.4 343.4 321.4 337.6 320.1 329.9 L 311.5 280 C 311 277 312 273.9 314.2 271.7 L 350.5 236.3 C 356.1 230.9 353 221.5 345.3 220.3 L 295.2 213 C 292.2 212.6 289.5 210.6 288.2 207.9 L 265.8 162.5 Z"
+                                            style="opacity: 0.8;" />
+                                    </svg> &nbsp; <a data-discord-id="737577969115070571">aaryanparveen</a></td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    55</td>
+                            </tr>
+
+                            <tr>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    2</td>
+                                <td
+                                    class="border-2 flex place-items-center text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    <svg width="15" height="15" viewBox="77.4 77.4 360 360"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill="#C0C0C0"
+                                            d="M 81.4 257.4 C 81.4 121.915 228.067 37.237 345.4 104.98 C 399.855 136.419 433.4 194.521 433.4 257.4 C 433.4 392.885 286.733 477.563 169.4 409.82 C 114.945 378.381 81.4 320.279 81.4 257.4 Z M 265.8 162.5 C 262.4 155.5 252.5 155.5 249 162.5 L 226.6 207.9 C 225.2 210.7 222.6 212.6 219.6 213 L 169.4 220.3 C 161.7 221.4 158.7 230.8 164.2 236.3 L 200.5 271.7 C 202.7 273.9 203.7 276.9 203.2 280 L 194.6 329.9 C 193.3 337.5 201.3 343.4 208.2 339.8 L 253 316.2 C 255.7 314.8 259 314.8 261.7 316.2 L 306.5 339.8 C 313.4 343.4 321.4 337.6 320.1 329.9 L 311.5 280 C 311 277 312 273.9 314.2 271.7 L 350.5 236.3 C 356.1 230.9 353 221.5 345.3 220.3 L 295.2 213 C 292.2 212.6 289.5 210.6 288.2 207.9 L 265.8 162.5 Z"
+                                            style="opacity: 0.8;" />
+                                    </svg> &nbsp; <a data-discord-id="725948895531630704">trickastley.</a></td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    52</td>
+                            </tr>
+
+                            <tr>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    3</td>
+                                <td
+                                    class="border-2 flex place-items-center text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    <svg width="15" height="15" viewBox="77.4 77.4 360 360"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill="#CD7F32"
+                                            d="M 81.4 257.4 C 81.4 121.915 228.067 37.237 345.4 104.98 C 399.855 136.419 433.4 194.521 433.4 257.4 C 433.4 392.885 286.733 477.563 169.4 409.82 C 114.945 378.381 81.4 320.279 81.4 257.4 Z M 265.8 162.5 C 262.4 155.5 252.5 155.5 249 162.5 L 226.6 207.9 C 225.2 210.7 222.6 212.6 219.6 213 L 169.4 220.3 C 161.7 221.4 158.7 230.8 164.2 236.3 L 200.5 271.7 C 202.7 273.9 203.7 276.9 203.2 280 L 194.6 329.9 C 193.3 337.5 201.3 343.4 208.2 339.8 L 253 316.2 C 255.7 314.8 259 314.8 261.7 316.2 L 306.5 339.8 C 313.4 343.4 321.4 337.6 320.1 329.9 L 311.5 280 C 311 277 312 273.9 314.2 271.7 L 350.5 236.3 C 356.1 230.9 353 221.5 345.3 220.3 L 295.2 213 C 292.2 212.6 289.5 210.6 288.2 207.9 L 265.8 162.5 Z"
+                                            style="opacity: 0.8;" />
+                                    </svg> &nbsp; <a data-discord-id="756504040787148811">vedant6569</a>
+                                </td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    49</td>
+                            </tr>
+
+                            <tr>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    4</td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    <a data-discord-id="848138977223376945">akki1002045110</a></td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    46</td>
+                            </tr>
+
+                            <tr>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    5</td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    <a data-discord-id="785809227951636480">devanssh</a></td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    46</td>
+                            </tr>
+
+                            <tr>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    6</td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    <a data-discord-id="559282061748338708">babatoxic.</a></td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    41</td>
+                            </tr>
+
+                            <tr>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    7</td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    <a data-discord-id="744855961512050699">youdontknowwho</a></td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    40</td>
+                            </tr>
+
+                            <tr>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    8</td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    <a data-discord-id="1017085426386862111">pattu_sai</a></td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    36</td>
+                            </tr>
+
+                            <tr>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    9</td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    <a data-discord-id="1162358727568003114">jerinbs</a></td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    35</td>
+                            </tr>
+
+                            <tr>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    10</td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    <a data-discord-id="823782163043319848">lonewolf6t9</a></td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    34</td>
+                            </tr>
+
+                            <tr>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    11</td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    <a data-discord-id="1038444905569206314">krishi4654</a></td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    34</td>
+                            </tr>
+
+                            <tr>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    12</td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    <a data-discord-id="1289939163663171627">ashmit_41476</a></td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    34</td>
+                            </tr>
+
+                            <tr>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    13</td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    <a data-discord-id="924657054793228308">sahilsingh1404</a></td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    34</td>
+                            </tr>
+
+                            <tr>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    14</td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    <a data-discord-id="737984277970681958">not_atharv0023</a></td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    33</td>
+                            </tr>
+
+                            <tr>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    15</td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    <a data-discord-id="1290705057712443474">archit_71389</a></td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    32</td>
+                            </tr>
+
+                            <tr>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    16</td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    <a data-discord-id="796025313481326592">piyushmittal2005</a></td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    32</td>
+                            </tr>
+
+                            <tr>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    17</td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    <a data-discord-id="1223522266319425596">vanshii_23_26140</a></td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    32</td>
+                            </tr>
+
+                            <tr>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    18</td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    <a data-discord-id="809791419882930217">tanishq_som</a></td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    32</td>
+                            </tr>
+
+                            <tr>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    19</td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    <a data-discord-id="1076421713509744671">ctrlaltdel_204</a></td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    30</td>
+                            </tr>
+
+                            <tr>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    20</td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    <a data-discord-id="1169807986114449471">l0n3_w0lf_r04r</a></td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    30</td>
+                            </tr>
+
+                            <tr>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    21</td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    <a data-discord-id="898935282987057212">harsheetaran</a></td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    30</td>
+                            </tr>
+
+                            <tr>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    22</td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    <a data-discord-id="1076436173368606750">aayaniverma</a></td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    29</td>
+                            </tr>
+
+                            <tr>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    23</td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    <a data-discord-id="760398393876152351">shashwatpandey0527</a></td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    29</td>
+                            </tr>
+
+                            <tr>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    24</td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    <a data-discord-id="1287051218664951840">aa9090_sh_12838</a></td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    29</td>
+                            </tr>
+
+                            <tr>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    25</td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    <a data-discord-id="873574191025225808">black_flash_29</a></td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    28</td>
+                            </tr>
+
+                            <tr>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    26</td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    <a data-discord-id="977104727223447562">aradhyabansal241889</a></td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    27</td>
+                            </tr>
+
+                            <tr>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    27</td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    <a data-discord-id="778251213350371339">diya4683</a></td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    27</td>
+                            </tr>
+
+                            <tr>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    28</td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    <a data-discord-id="724304475476459572">kanav_811</a></td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    22</td>
+                            </tr>
+
+                            <tr>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    29</td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    <a data-discord-id="1288718465716195360">caffeineaddict18_62317</a></td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    18</td>
+                            </tr>
+
+                            <tr>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    30</td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    <a data-discord-id="494466162604638219">khechlet</a></td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    12</td>
+                            </tr>
+
+                            <tr>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    31</td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    <a data-discord-id="745107593508421693">cahill.20</a></td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    12</td>
+                            </tr>
+
+                            <tr>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    32</td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    <a data-discord-id="424133185123647488">[ADMIN] krishsharma</a></td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    11</td>
+                            </tr>
+
+                            <tr>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    33</td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    <a data-discord-id="747135548597993525">thesavagesoul</a></td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    10</td>
+                            </tr>
+
+                            <tr>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    34</td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    <a data-discord-id="754694251396333588">siddhide</a></td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    9</td>
+                            </tr>
+
+                            <tr>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    35</td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    <a data-discord-id="1252835949209976842">brobocop__</a></td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    9</td>
+                            </tr>
+
+                            <tr>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    36</td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    <a data-discord-id="1290761397524889642">ansh_72451</a></td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    8</td>
+                            </tr>
+
+                            <tr>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    37</td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    <a data-discord-id="1290728933121200190">parth_31840</a></td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    8</td>
+                            </tr>
+
+                            <tr>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    38</td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    <a data-discord-id="1290410217166868500">rjyadav23</a></td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    7</td>
+                            </tr>
+
+                            <tr>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    39</td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    <a data-discord-id="1289992951081996348">singh_708_58542</a></td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    7</td>
+                            </tr>
+
+                            <tr>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    40</td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    <a data-discord-id="818861889731428363">popcat3947</a></td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    7</td>
+                            </tr>
+
+                            <tr>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    41</td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    <a data-discord-id="1199425418126696511">vr1111_81005</a></td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    7</td>
+                            </tr>
+
+                            <tr>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    42</td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    <a data-discord-id="1290739534845182012">devil_99946</a></td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    7</td>
+                            </tr>
+
+                            <tr>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    43</td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    <a data-discord-id="784388112201285662">kriti04365</a></td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    7</td>
+                            </tr>
+
+                            <tr>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    44</td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    <a data-discord-id="1140855166690676746">chaudhari_kavya</a></td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    7</td>
+                            </tr>
+
+                            <tr>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    45</td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    <a data-discord-id="1285490303368957985">nityas28xx_64266</a></td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    7</td>
+                            </tr>
+
+                            <tr>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    46</td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    <a data-discord-id="909032828304511016">nitya2816s</a></td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    7</td>
+                            </tr>
+
+                            <tr>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    47</td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    <a data-discord-id="1285487166344007712">sd5261</a></td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    7</td>
+                            </tr>
+
+                            <tr>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    48</td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    <a data-discord-id="861530158527545374">diya6340</a></td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    7</td>
+                            </tr>
+
+                            <tr>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    49</td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    <a data-discord-id="708892019220676660">devil_king4553</a></td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    7</td>
+                            </tr>
+
+                            <tr>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    50</td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    <a data-discord-id="1290521588952862803">bad.piggies849</a></td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    7</td>
+                            </tr>
+
+                            <tr>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    51</td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    <a data-discord-id="939800552857022534">silentromeo1908</a></td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    6</td>
+                            </tr>
+
+                            <tr>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    52</td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    <a data-discord-id="950737834510274590">gatikmittal</a></td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    6</td>
+                            </tr>
+
+                            <tr>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    53</td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    <a data-discord-id="769592143148351489">misosoup_2604</a></td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    4</td>
+                            </tr>
+
+                            <tr>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    54</td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    <a data-discord-id="528596891139571713">ayanboii</a></td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    3</td>
+                            </tr>
+
+                            <tr>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    55</td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    <a data-discord-id="403185691934195712">pigbenis0093</a></td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    3</td>
+                            </tr>
+
+                            <tr>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    56</td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    <a data-discord-id="1290406551286321298">anshiii_2904</a></td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    2</td>
+                            </tr>
+
+                            <tr>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    57</td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    <a data-discord-id="1290642992696266866">am._.kavya_23439</a></td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    1</td>
+                            </tr>
+
+                            <tr>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    58</td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    <a data-discord-id="1290733918391242858">shinchan_63327</a></td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    1</td>
+                            </tr>
+
+                            <tr>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    59</td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    <a data-discord-id="601017181383163925">shubhg2005</a></td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    1</td>
+                            </tr>
+
+                            <tr>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    60</td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    <a data-discord-id="576401701947310082">hsuyip</a></td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    1</td>
+                            </tr>
+
+                            <tr>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    61</td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    <a data-discord-id="1251613890018541704">noob_16564</a></td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    0</td>
+                            </tr>
+
+                            <tr>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    62</td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    <a data-discord-id="1290719706348781698">rajgupta_87023</a></td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    0</td>
+                            </tr>
+
+                            <tr>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    63</td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    <a data-discord-id="1290734913229946937">v_jain6805</a></td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    0</td>
+                            </tr>
+
+                            <tr>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    64</td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    <a data-discord-id="1282303593709436980">digitalsage0808</a></td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    0</td>
+                            </tr>
+
+                            <tr>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    65</td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    <a data-discord-id="1290733534662623323">aastikvarshney</a></td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    0</td>
+                            </tr>
+
+                            <tr>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    66</td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    <a data-discord-id="257396311265902592">._rover_.</a></td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    0</td>
+                            </tr>
+
+                            <tr>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    67</td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    <a data-discord-id="762260597907652670">chiefps.</a></td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    0</td>
+                            </tr>
+
+                            <tr>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    68</td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    <a data-discord-id="1255771367148617801">anjaleen_92338</a></td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    0</td>
+                            </tr>
+
+                            <tr>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    69</td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    <a data-discord-id="411004271446720522">tornado_2304</a></td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    0</td>
+                            </tr>
+
+                            <tr>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    70</td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    <a data-discord-id="1125677108937621564">aayushmishra6969</a></td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    0</td>
+                            </tr>
+
+                            <tr>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    71</td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    <a data-discord-id="1221904141744476162">cry0by7e</a></td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    0</td>
+                            </tr>
+
+                            <tr>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    72</td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    <a data-discord-id="719886579052707922">creedster_</a></td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    0</td>
+                            </tr>
+
+                            <tr>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    73</td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    <a data-discord-id="744224056966119565">dilutewater</a></td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    0</td>
+                            </tr>
+
+                            <tr>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    74</td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    <a data-discord-id="959803912477626428">lalit_rao</a></td>
+                                <td
+                                    class="border-2 text-text text-left px-2 bg-background font-nulshock border-hard-bg">
+                                    0</td>
+                            </tr>
+
+
+                        </table>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+            <p class="text-center font-dos text-text text-xl font-bold">Join our <a class="text-[#888888]"
+                    href="/links/discord">discord!</a></p>
+        </div>
+
+    </section>
+
+    <section id="footer" class="bg-text w-full p-3">
+        <div class="w-full flex place-items-center font-nulshock text-xl">
+            <img src="/static/assets/images/acmlogo.svg"> &nbsp; <p> DECODE by <a
+                    href="https://linktr.ee/roadtoelicit24" class="text-links">MUJ ACM</a></p>
+        </div>
+
+        <div class="mt-4">
+            <br>
+            <p class="font-nulshock text-hard-bg text-lg md:text-3xl">FOLLOW US ON OUR SOCIALS!</p>
+            <a href="https://www.instagram.com/elicitmuj" target="_blank"
+                class="text-links font-dos underline text-xl">instagram</a>&nbsp;
+
+            <a href="https://www.linkedin.com/company/muj-acm-student-chapter" target="_blank"
+                class="text-links font-dos underline text-xl">linkedin</a>&nbsp;
+
+            <a href="/cdn-cgi/l/email-protection#acc1d9c6cdcfc1eccbc1cdc5c082cfc3c1" target="_blank"
+                class="text-links font-dos underline text-xl">email</a>&nbsp;
+            <a href="tel:+918287735005" target="_blank" class="text-links font-dos underline text-xl">phone</a>&nbsp;
+        </div>
+        <br>
+        <h1 class="text-center text-links text-xl md:text-2xl font-dos">
+            <a href="https://krishsharma.in" target="_blank">Website by Krish Sharma</a>
+        </h1>
+    </section>
+
+
+
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="/static/assets/js/nav.js"></script>
+
+
+
+</body>
+
+</html>
